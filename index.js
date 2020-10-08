@@ -31,6 +31,6 @@ app.use((req,res)=>{
 
 })
 // To Start server and to listen in port 2600
-app.listen(2600,()=>{
+app.listen(process.env.PORT||2600,()=>{
     console.log("Server is started in port 2600")
 });
